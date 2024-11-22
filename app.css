@@ -1,0 +1,77 @@
+#shoppingContainer1{
+    border: 1px solid rgb(237, 26, 26);
+    height: 80px ;
+    background-color:white;
+   
+
+}
+/* .text{
+    color: cadetblue;
+    position: relative;
+    right: -19px;
+    top: 32px;
+} */
+header
+{
+    border:2px solid green;
+}
+#loginContainer{
+    height: 400px;
+    
+    border: 1px solid black;
+    /* position: absolute; */
+    /* right: 532px; */
+    margin: 90px;
+    width: 300px;
+    padding: 33px;
+    border-radius: 63px;
+}
+.loginBtn{
+    position: absolute;
+    right: 33px;
+    top: 12px;
+}
+.creationOfCards{
+    display: flex;
+    flex-wrap: wrap;
+    columns: 3 ;
+}
+.NewCard1, .NewCard2, .NewCard3, .NewCard4, .NewCard5, .NewCard6{
+margin: 10px;
+position: absolute;
+top: -250px;
+border-radius: 10px;
+
+}
+.customizedSearchBar{
+    position: absolute;
+    left: 331px;
+    top: 13px;
+    width: 336px;
+}
+.customizedSearchHoverBtn:hover {
+    color: rgb(224, 146, 10);
+}
+.cart-bi{
+    position: absolute;
+    left: 806px;
+    top: -2px;
+    font-size: xxx-large;
+}
+.addAccount{
+    position: absolute;
+    left: 719px;
+    top: -1px;
+    font-size: xxx-large;
+}
+.logo{
+     position: absolute;
+    width: 115px;
+    top: -17px;
+}
+.logo1{
+    position: absolute;
+    width: 120px;
+    left: 115px;
+    top: 8px;
+}
