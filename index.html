@@ -1,188 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./app.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="../lib/bootstrap-icons/font/bootstrap-icons.min.css">
-        <script src="passwordValidation.js"></script>
-        <script src="../lib/jquery.js"></script>
-        <script src="../lib/axios.js"></script>
-        <script src="../onlineShoppingApp/"></script>
-    </head>
-
-    <body>
-        <header class="fluid-container" id="shoppingContainer1">
-        <!-- Logo -->
-         <div class="logoNotUsed">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJKGYZPE4i3ahqwXA-KmeiRuH4GR-PBu_PnA&s" class="logo" alt="Logo">
-        </div>
-
-        <!-- Name-Card -->
-         <div >
-          <img src="../onlineShoppingApp/images/logo/Screenshot 2024-11-01 184805.png" class="logo1" alt="LogoName">
-         </div>
-
-            <!-- <span class="text">onlineShoppingApp</span>  -->
-
-        <!-- Search Bar -->
-        <nav class="navbar bg-body-tertiary customizedSearchBar">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success customizedSearchHoverBtn" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-
-
-        <!-- addAccount-icon -->
-          <i class="bi bi-person-circle addAccount"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Color Picker</h1>
+    <h1 id="text">Write Here</h1>
+    <h2 class="mainContainer" id = "OwnText"  contenteditable="true"></h2>
     
-        <!-- Cart-Symbol -->
-          <i class="bi bi-cart-plus cart-bi"></i>
-        
-        <!-- Login-Button -->
-
-            <button type="button"  class="btn btn-primary loginBtn" data-bs-toggle="modal" data-bs-target="#shoppingContainer">
-               Login
-              </button>
-
-        </header>
-
-        <main>
-          <!-- carousel -->
-
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../onlineShoppingApp/images/home_page_slider/one.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../onlineShoppingApp/images/home_page_slider/two.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../onlineShoppingApp/images/home_page_slider/three.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../onlineShoppingApp/images/home_page_slider/four.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../onlineShoppingApp/images/home_page_slider/five.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <!-- cards -->
-          <div class="creationOfCards">
-           <!-- Card-1 -->
-                <div class="card NewCard1" style="width: 18rem; ">
-                  <img src="../onlineShoppingApp/images/card_images/bedding.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">bedding</h5>
-                    <p class="card-text">Some quick example text to build on the   and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-            <!-- Card-2 -->
-                <div class="card NewCard2" style="width: 18rem;">
-                  <img src="../onlineShoppingApp/images/card_images/hat.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Hat</h5>
-                    <p class="card-text">A beautiful hat is waiting for you.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-            <!-- Card-3 -->
-                <div class="card NewCard3" style="width: 18rem;">
-                  <img src="../onlineShoppingApp/images/card_images/chair.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Chair</h5>
-                    <p class="card-text">Some quick example text to build on the   and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-             <!-- Card-4 -->
-                <div class="card NewCard4" style="width: 18rem;">
-                  <img src="../onlineShoppingApp/images/card_images/shoes.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Shoes</h5>
-                    <p class="card-text">Some quick example text to build on the   and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-            <!-- Card-5 -->
-                <div class="card NewCard5" style="width: 18rem;">
-                  <img src="../onlineShoppingApp/images/card_images/headset.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Headset</h5>
-                    <p class="card-text">Some quick example text to build on the   and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-            <!-- card-6 -->
-                <div class="card NewCard6" style="width: 18rem;">
-                  <img src="../onlineShoppingApp/images/card_images/mug.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">mug</h5>
-                    <p class="card-text">Some quick example text to build on the   and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-          </div>
-          
-        </main>
-
-        <footer>
-
-        </footer>
-
-
-        
-<!-- Modal -->
-<div class="modal fade" id="shoppingContainer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Page</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="loginContainer">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-             
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Login</button>
-        </div>
-      </div>
+    <div class="colorContainer">
+        <h2> Font Color</h2>
+        <button id="red" aria-label="Name" onclick="redBtn()"></button>
+        <button id="green" aria-label="Name" onclick="greenBtn()"></button>
+        <button id="blue" aria-label="Name" onclick="blueBtn()"></button>
+        <button id="brown" aria-label="Name" onclick="brownBtn()"></button>
+        <button id="violet" aria-label="Name" onclick="violetBtn()"></button>
+        <button id="yellow" aria-label="Name" onclick="yellowBtn()"></button>
+        <button id="pink" aria-label="Name" onclick="pinkBtn()"></button>
+        <button id="orange" aria-label="Name" onclick="orangeBtn()"></button>
+        <button id="darkgolden" aria-label="Name" onclick="darkgoldenBtn()"></button>
+        <button id="darkslateblue" aria-label="Name" onclick="darkslateblueBtn()"></button>
+        <button id="darkslategray" aria-label="Name" onclick="darkslategrayBtn()"></button>
+        <button id="darkcyan" aria-label="Name" onclick="darkcyanBtn()"></button>
+        <button id="darkgreen" aria-label="Name" onclick="darkgreenBtn()"></button>
+        <button id="maroon" aria-label="Name" onclick="maroonBtn()"></button>
+        <button id="crimson" aria-label="Name" onclick="crimsonBtn()"></button>
+        <button id="yellowgreen" aria-label="Name" onclick="yellowgreenBtn()"></button>
+        <button id="chocolate" aria-label="Name" onclick="chocolateBtn()"></button>
+        <button id="teal" aria-label="Name" onclick="tealBtn()"></button>
+        <button id="darkmagenta" aria-label="Name" onclick="darkmagentaBtn()"></button>
+        <button id="chartreuse" aria-label="Name" onclick="chartreuseBtn()"></button>
+        <button id="gold" aria-label="Name" onclick="goldBtn()"></button>
+        <button id="fuchsia" aria-label="Name" onclick="fuchsiaBtn()"></button>
+        <button id="aqua" aria-label="Name" onclick="aquaBtn()"></button>
+        <button id="olivedrab" aria-label="Name" onclick="olivedrabBtn()"></button>
     </div>
-  </div>
-    </body>
+    <div class="backGroundContainer">
+        <h2>BackGround Colors</h2>
+        <button id="lightblue" onclick="lightblueBtn()"></button>
+        <button id="lightcoral" onclick="lightcoralBtn()"></button>
+        <button id="lightslategray" onclick="lightslategrayBtn()"></button>
+        <button id="lightseagreen" onclick="lightseagreenBtn()"></button>
+        <button id="lightslategrey" onclick="lightslategreyBtn()"></button>
+        <button id="lightsalmon" onclick="lightsalmonBtn()"></button>
+        <button id="lightgreen" onclick="lightgreenBtn()"></button>
+        <button id="mediumpurple" onclick="mediumpurpleBtn()"></button>
+        <button id="mediumturquoise" onclick="mediumturquoiseBtn()"></button>
+        <button id="wheat" onclick="wheatBtn()"></button>
+        <button id="thistle" onclick="thistleBtn()"></button>
+        <button id="peru" onclick="peruBtn()"></button>
+        <button id="palevioletred" onclick="palevioletredBtn()"></button>
+        <button id="rosybrown" onclick="rosybrownBtn()"></button>
+        <button id="dodgerblue" onclick="dodgerblueBtn()"></button>
+        <button id="slateblue" onclick="slateblueBtn()"></button>
+    </div>
+    
+    <select name="fontStyle" id="fstyle" onchange="algerian()">
+        <option value="">Select Font Style</option>
+        <option value="algerian">Algerian</option>
+        <option value="Agency_FB">Agency FB</option>
+        <option value="Kunstler_Script">Kunstler Script</option>
+        <option value="Old_English_Text_MT">Old English Text MT</option>
+        <option value="Times_New_Roman">Times New Roman</option>
+        <option value="Ink_Free">Ink Free</option>
+        <option value="Wide_Latin">Wide Latin</option>
+        <option value="Goudy_Stout">Goudy Stout</option>
+        <option value="Viner_Hand_ITC">Viner Hand ITC</option>
+        <option value="Vladimir_Script">Vladimir Script</option>
+        <option value="Snap_ITC">Snap ITC</option>
+        <option value="Rage_Italic">Rage Italic</option>
+        <option value="Goudy_Stout">Goudy Stout</option>
+        <option value="Eras_Bold ITC">Eras Bold ITC</option>
+        <option value="Joker_man">Jokerman</option>
+        <option value="Script_MT Bold">Script MT Bold</option>
+        <option value="Franklin_Gothic Demi Cond">Franklin Gothic Demi Cond</option>
+        <option value="Matura_MT Script Capitals">Matura MT Script Capitals</option>
+        <option value="Imprint_MT Shadow">Imprint MT Shadow</option>
+    </select>
+
+</body>
+<script src="script.js"></script>
 </html>
